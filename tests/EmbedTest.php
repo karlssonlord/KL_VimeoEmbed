@@ -5,7 +5,8 @@ class EmbedTest extends PHPUnit_Framework_TestCase
 {
     public function setUp()
     {
-        \Mage::app()->setCurrentStore(Mage_Core_Model_App::ADMIN_STORE_ID);
+//        \Mage::app()->setCurrentStore(Mage_Core_Model_App::ADMIN_STORE_ID);
+        Mage::init();
     }
     
     /**

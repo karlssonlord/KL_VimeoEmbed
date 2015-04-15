@@ -36,12 +36,12 @@ php n98-magerun.phar install \
     --dbName="${DB_NAME}" \
     --useDefaultConfigParams=yes \
     --installationFolder="${MAGENTO_ROOT}" \
-    --baseUrl="${HOST_NAME}"
+    --baseUrl="http://${HOST_NAME}"
 
 if ps aux | grep "[p]hp -S ${HOST_NAME} -t src/" > /dev/null ; then
     echo "${green}Server is already running...${reset}"
 else
-    php -S ${HOST_NAME} -t ${MAGENTO_ROOT} -c &
+    php -S ${HOST_NAME} -t ${MAGENTO_ROOT} &
 fi
 
 echo "${green}Done installing.${reset}"
