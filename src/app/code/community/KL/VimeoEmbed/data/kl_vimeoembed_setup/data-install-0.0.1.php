@@ -1,10 +1,10 @@
 <?php
 
-
-
 /* @var $installer Mage_Core_Model_Resource_Setup */
 $installer = $this;
+
 $installer->startSetup();
+
 /**
  * Create vimeo video link attribute
  */
@@ -30,15 +30,5 @@ $installer->addAttribute(
         'sort_order'                 => '50',
     )
 );
-
-function addAttributeToAttributeSet($attributeId, $attributeSetId, $attributeGroupName = 'General')
-{
-    $model = Mage::getModel('eav/entity_setup','core_setup');
-    $attributeGroupId = $model->getAttributeGroup('catalog_product', $attributeSetId, $attributeGroupName);
-    $model->addAttributeToSet('catalog_product', $attributeSetId, $attributeGroupId, $attributeId);
-}
-
-$attributeModel = Mage::getModel('eav/entity_attribute')->loadByCode(Mage_Catalog_Model_Product::ENTITY, 'vimeo_video_link');
-addAttributeToAttributeSet($attributeModel->getId(), 4);
 
 $installer->endSetup();
