@@ -2,7 +2,7 @@
     "name": "karlssonlord/KL_VimeoEmbed",
     "description": "Embed Vimeo videos",
     "require-dev": {
-        "phpunit/phpunit": "~4.5",
+        "phpunit/phpunit": "~4.4",
         "magento-hackathon/magento-composer-installer": "2.1.1",
         "magento/core": "1.9.1.0"
     },
@@ -34,6 +34,5 @@
                 "src/lib"
             ]
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
