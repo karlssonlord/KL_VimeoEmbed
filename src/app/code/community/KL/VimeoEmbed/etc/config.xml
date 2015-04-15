@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <KL_VimeoEmbed>
+            <version>0.0.1</version>
+        </KL_VimeoEmbed>
+    </modules>
+    <global>
+        <helpers>
+            <vimeo>
+                <class>KL_VimeoEmbed_Helper</class>
+            </vimeo>
+        </helpers>
+        <resources>
+            <kl_vimeoembed_setup>
+                <setup>
+                    <module>KL_VimeoEmbed</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+            </kl_vimeoembed_setup>
+        </resources>
+    </global>
+</config>

@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <KL_VimeoEmbed>
+            <active>true</active>
+            <codePool>community</codePool>
+        </KL_VimeoEmbed>
+    </modules>
+</config>
