@@ -1,7 +1,16 @@
-<?php 
+<?php
 
+/**
+ * @package KL_VimeoEmbed
+ */
 class KL_VimeoEmbed_Helper_Data extends Mage_Core_Model_Abstract
 {
+    /**
+     * @param      $url
+     * @param null $width
+     * @param null $height
+     * @return string
+     */
     public function embed($url, $width = null, $height = null)
     {
         $width = $width ? " width=\"{$width}\"" : '';
@@ -15,9 +24,14 @@ class KL_VimeoEmbed_Helper_Data extends Mage_Core_Model_Abstract
         ]);
     }
 
+    /**
+     * @param $url
+     * @return string
+     */
     private function parseId($url)
     {
         $path = parse_url($url, PHP_URL_PATH);
         return basename($path);
     }
+
 }
