@@ -18,6 +18,6 @@ class KL_VimeoEmbed_Helper_Data extends Mage_Core_Model_Abstract
     private function parseId($url)
     {
         $path = parse_url($url, PHP_URL_PATH);
-        return end(explode('/', $path));
+        return basename($path);
     }
 }
