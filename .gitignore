@@ -1,2 +1,8 @@
 /vendor/
 n98-magerun.phar
+composer.lock
+src/*
+!src/app/code/community/KL/VimeoEmbed/*
+!src/app/code/community/KL/VimeoEmbed/**/*
+!src/app/code/community/KL/VimeoEmbed/data/**/*
+!src/app/etc/modules/KL_VimeoEmbed.xml
